@@ -2,12 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "iconfinder_chevron-left_4115222.png",
+      "filename" : "leftArrow.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "iconfinder_chevron-left_4115222-2.png",
+      "filename" : "leftArrow-2.png",
       "scale" : "2x"
     },
     {
