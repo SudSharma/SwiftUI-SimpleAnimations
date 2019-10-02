@@ -31,7 +31,7 @@ struct ContentView : View {
                                 .imageScale(.small)
                                 .rotationEffect(.degrees(isArrowPointingLeft ? 0 : 180))
                                 .padding()
-                                .animation(.basic())
+                                .animation(.default)
                         }
                     }
                     HStack {
@@ -57,7 +57,7 @@ struct ContentView : View {
                                 .imageScale(.small)
                                 .rotationEffect(.degrees(isArrowPointingLeft ? 0 : 180))
                                 .padding()
-                                .animation(.fluidSpring())
+                                .animation(.spring())
                         }
                     }
                     HStack {
@@ -70,7 +70,7 @@ struct ContentView : View {
                                 .imageScale(.small)
                                 .rotationEffect(.degrees(isHamburgerShowing ? 0 : 180))
                                 .padding()
-                                .animation(.fluidSpring())
+                                .animation(.spring())
                         }
                     }
                     HStack {
@@ -96,7 +96,7 @@ struct ContentView : View {
                                 .imageScale(.small)
                                 .rotationEffect(.degrees(isCheckmarkShowing ? 0 : 180))
                                 .padding()
-                                .animation(Animation.fluidSpring())
+                                .animation(.spring())
                         }
                     }
                 }
