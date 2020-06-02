@@ -9,56 +9,52 @@
 import SwiftUI
 
 struct ContentView : View {
-    @State private var isArrowPointingLeft: Bool = false
-    @State private var isHamburgerShowing: Bool = true
-    @State private var right: Bool = true
-    @State private var isCheckmarkShowing: Bool = true
-    @State private var isCelsius: Bool = true
-    @State private var startAnimation: Bool = false
+    @State private var basicAnimation = false
+    @State private var springAnimation = false
+    @State private var isHamburgerShowing = true
+    @State private var right = true
+    @State private var isCheckmarkShowing = true
+    @State private var isCelsius = true
+    @State private var startAnimation = false
     private var degree: Double = 180
     
     var body: some View {
         NavigationView {
-            Form {
+            List {
                 Section(footer: Text("Tap to see animation")) {
                     HStack {
                         Text("Basic")
                         Spacer()
                         Button(action: {
-                            self.isArrowPointingLeft.toggle()
+                            self.basicAnimation.toggle()
                         }) {
                             Image("LeftArrow")
                                 .imageScale(.small)
-                                .rotationEffect(.degrees(isArrowPointingLeft ? 0 : 180))
+                                .rotationEffect(.degrees(basicAnimation ? 0 : 180))
                                 .padding()
                                 .animation(.default)
                         }
+                    }
+                    .contentShape(Rectangle())
+                    .onTapGesture {
+                        self.basicAnimation.toggle()
                     }
                     HStack {
                         Text("Spring")
                         Spacer()
                         Button(action: {
-                            self.isArrowPointingLeft.toggle()
+                            self.springAnimation.toggle()
                         }) {
                             Image("LeftArrow")
                                 .imageScale(.small)
-                                .rotationEffect(.degrees(isArrowPointingLeft ? 0 : 180))
+                                .rotationEffect(.degrees(springAnimation ? 0 : 180))
                                 .padding()
-                                .animation(.spring())
+                                .animation(.spring(response: 0.5, dampingFraction: 0.3, blendDuration: 0.2))
                         }
                     }
-                    HStack {
-                        Text("Fluid Spring")
-                        Spacer()
-                        Button(action: {
-                            self.isArrowPointingLeft.toggle()
-                        }) {
-                            Image("LeftArrow")
-                                .imageScale(.small)
-                                .rotationEffect(.degrees(isArrowPointingLeft ? 0 : 180))
-                                .padding()
-                                .animation(.spring())
-                        }
+                    .contentShape(Rectangle())
+                    .onTapGesture {
+                        self.springAnimation.toggle()
                     }
                     HStack {
                         Text("Hamburger to Cross")
@@ -73,6 +69,10 @@ struct ContentView : View {
                                 .animation(.spring())
                         }
                     }
+                    .contentShape(Rectangle())
+                    .onTapGesture {
+                        self.isHamburgerShowing.toggle()
+                    }
                     HStack {
                         Text("Right & Wrong")
                         Spacer()
@@ -85,6 +85,10 @@ struct ContentView : View {
                                 .padding()
                                 .animation(.spring())
                         }
+                    }
+                    .contentShape(Rectangle())
+                    .onTapGesture {
+                        self.right.toggle()
                     }
                     HStack {
                         Text("Checkmark to Close")
@@ -99,8 +103,14 @@ struct ContentView : View {
                                 .animation(.spring())
                         }
                     }
+                    .contentShape(Rectangle())
+                    .onTapGesture {
+                        self.isCheckmarkShowing.toggle()
+                    }
                 }
             }
+            .listStyle(GroupedListStyle())
+            .buttonStyle(PlainButtonStyle())
             .navigationBarTitle(Text("Simple Animations"))
         }
     }
