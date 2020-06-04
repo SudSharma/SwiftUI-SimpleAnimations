@@ -11,11 +11,12 @@ import SwiftUI
 struct ContentView : View {
     @State private var basicAnimation = false
     @State private var springAnimation = false
+    @State private var isAnimating = false
+    @State private var isContinuous = false
     @State private var isHamburgerShowing = true
     @State private var right = true
     @State private var isCheckmarkShowing = true
     @State private var isCelsius = true
-    @State private var startAnimation = false
     private var degree: Double = 180
     
     var body: some View {
@@ -28,13 +29,13 @@ struct ContentView : View {
                         Button(action: {
                             self.basicAnimation.toggle()
                         }) {
-                            Image("LeftArrow")
-                                .imageScale(.small)
+                            Image(systemName: "chevron.left")
+                                .font(.title)
                                 .rotationEffect(.degrees(basicAnimation ? 0 : 180))
-                                .padding()
                                 .animation(.default)
                         }
                     }
+                    .frame(height: 54.0)
                     .contentShape(Rectangle())
                     .onTapGesture {
                         self.basicAnimation.toggle()
@@ -45,13 +46,13 @@ struct ContentView : View {
                         Button(action: {
                             self.springAnimation.toggle()
                         }) {
-                            Image("LeftArrow")
-                                .imageScale(.small)
+                            Image(systemName: "chevron.left")
+                                .font(.title)
                                 .rotationEffect(.degrees(springAnimation ? 0 : 180))
-                                .padding()
                                 .animation(.spring(response: 0.5, dampingFraction: 0.3, blendDuration: 0.2))
                         }
                     }
+                    .frame(height: 54.0)
                     .contentShape(Rectangle())
                     .onTapGesture {
                         self.springAnimation.toggle()
@@ -62,13 +63,13 @@ struct ContentView : View {
                         Button(action: {
                             self.isHamburgerShowing.toggle()
                         }) {
-                            Image(isHamburgerShowing ? "Hamburger3" : "Cancel")
-                                .imageScale(.small)
+                            Image(systemName: isHamburgerShowing ? "line.horizontal.3" : "multiply")
+                                .font(.title)
                                 .rotationEffect(.degrees(isHamburgerShowing ? 0 : 180))
-                                .padding()
                                 .animation(.spring())
                         }
                     }
+                    .frame(height: 54.0)
                     .contentShape(Rectangle())
                     .onTapGesture {
                         self.isHamburgerShowing.toggle()
@@ -79,13 +80,13 @@ struct ContentView : View {
                         Button(action: {
                             self.right.toggle()
                         }) {
-                            Image(right ? "Right" : "Wrong")
-                                .imageScale(.small)
+                            Image(systemName: right ? "checkmark.circle" : "multiply.circle")
+                                .font(.title)
                                 .rotationEffect(.degrees(right ? 0 : 180))
-                                .padding()
                                 .animation(.spring())
                         }
                     }
+                    .frame(height: 54.0)
                     .contentShape(Rectangle())
                     .onTapGesture {
                         self.right.toggle()
@@ -96,22 +97,34 @@ struct ContentView : View {
                         Button(action: {
                             self.isCheckmarkShowing.toggle()
                         }) {
-                            Image(isCheckmarkShowing ? "Checkmark" : "Cancel")
-                                .imageScale(.small)
+                            Image(systemName: isCheckmarkShowing ? "checkmark" : "multiply")
+                                .font(.title)
                                 .rotationEffect(.degrees(isCheckmarkShowing ? 0 : 180))
-                                .padding()
                                 .animation(.spring())
                         }
                     }
+                    .frame(height: 54.0)
                     .contentShape(Rectangle())
                     .onTapGesture {
                         self.isCheckmarkShowing.toggle()
                     }
+                    HStack {
+                        Text("Continuos")
+                        Spacer()
+                        Image(systemName: "arrow.2.circlepath")
+                            .font(.title)
+                            .rotationEffect(Angle(degrees: isContinuous ? 360 : 0))
+                            .animation(Animation.linear(duration: 2.0).repeatForever(autoreverses: false))
+                    }
+                    .frame(height: 54.0)
                 }
             }
             .listStyle(GroupedListStyle())
             .buttonStyle(PlainButtonStyle())
             .navigationBarTitle(Text("Simple Animations"))
+            .onAppear {
+                self.isContinuous = true
+            }
         }
     }
 }
