@@ -1,6 +1,6 @@
 //
 //  HostingController.swift
-//  SimpleAnimations-Watch WatchKit Extension
+//  SimpleAnimations-Watch Extension
 //
 //  Created by Sudarshan Sharma on 6/4/20.
 //  Copyright © 2020 MyCompany. All rights reserved.

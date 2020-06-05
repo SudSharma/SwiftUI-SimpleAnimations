@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		323307F92489C313002410BA /* SimpleAnimations-Watch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 323307F82489C313002410BA /* SimpleAnimations-Watch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		323307FF2489C313002410BA /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323307FD2489C313002410BA /* Interface.storyboard */; };
-		323308012489C316002410BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 323308002489C316002410BA /* Assets.xcassets */; };
-		323308082489C316002410BA /* SimpleAnimations-Watch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 323308072489C316002410BA /* SimpleAnimations-Watch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		3233080F2489C316002410BA /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3233080E2489C316002410BA /* HostingController.swift */; };
-		323308112489C316002410BA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323308102489C316002410BA /* ExtensionDelegate.swift */; };
-		323308132489C317002410BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 323308122489C317002410BA /* Assets.xcassets */; };
-		323308162489C317002410BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 323308152489C317002410BA /* Preview Assets.xcassets */; };
-		323308242489C3D8002410BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C78566422BEAE9000FFC87F /* ContentView.swift */; };
+		3233082B2489E1C7002410BA /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323308292489E1C7002410BA /* Interface.storyboard */; };
+		3233082D2489E1C9002410BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3233082C2489E1C9002410BA /* Assets.xcassets */; };
+		323308342489E1CA002410BA /* SimpleAnimations-Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 323308332489E1CA002410BA /* SimpleAnimations-Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3233083B2489E1CA002410BA /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3233083A2489E1CA002410BA /* HostingController.swift */; };
+		3233083D2489E1CA002410BA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3233083C2489E1CA002410BA /* ExtensionDelegate.swift */; };
+		3233083F2489E1CB002410BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3233083E2489E1CB002410BA /* Assets.xcassets */; };
+		323308422489E1CB002410BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 323308412489E1CB002410BA /* Preview Assets.xcassets */; };
+		323308462489E1CB002410BA /* SimpleAnimations-Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 323308272489E1C7002410BA /* SimpleAnimations-Watch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3233084F2489E244002410BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C78566422BEAE9000FFC87F /* ContentView.swift */; };
 		9C78566122BEAE9000FFC87F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C78566022BEAE9000FFC87F /* AppDelegate.swift */; };
 		9C78566322BEAE9000FFC87F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C78566222BEAE9000FFC87F /* SceneDelegate.swift */; };
 		9C78566522BEAE9000FFC87F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C78566422BEAE9000FFC87F /* ContentView.swift */; };
@@ -25,59 +25,58 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		323307FA2489C313002410BA /* PBXContainerItemProxy */ = {
+		323308352489E1CA002410BA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9C78565522BEAE9000FFC87F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 323307F72489C313002410BA;
-			remoteInfo = "SimpleAnimations-Watch WatchKit App";
+			remoteGlobalIDString = 323308322489E1CA002410BA;
+			remoteInfo = "SimpleAnimations-Watch Extension";
 		};
-		323308092489C316002410BA /* PBXContainerItemProxy */ = {
+		323308442489E1CB002410BA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9C78565522BEAE9000FFC87F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 323308062489C316002410BA;
-			remoteInfo = "SimpleAnimations-Watch WatchKit Extension";
+			remoteGlobalIDString = 323308262489E1C7002410BA;
+			remoteInfo = "SimpleAnimations-Watch";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		3233081A2489C317002410BA /* Embed Watch Content */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
-			dstSubfolderSpec = 16;
-			files = (
-				323307F92489C313002410BA /* SimpleAnimations-Watch WatchKit App.app in Embed Watch Content */,
-			);
-			name = "Embed Watch Content";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3233081D2489C317002410BA /* Embed App Extensions */ = {
+		3233084A2489E1CB002410BA /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				323308082489C316002410BA /* SimpleAnimations-Watch WatchKit Extension.appex in Embed App Extensions */,
+				323308342489E1CA002410BA /* SimpleAnimations-Watch Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3233084E2489E1CB002410BA /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				323308462489E1CB002410BA /* SimpleAnimations-Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		323307F52489C313002410BA /* SimpleAnimations-Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SimpleAnimations-Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		323307F82489C313002410BA /* SimpleAnimations-Watch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SimpleAnimations-Watch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		323307FE2489C313002410BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		323308002489C316002410BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		323308022489C316002410BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		323308072489C316002410BA /* SimpleAnimations-Watch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SimpleAnimations-Watch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3233080E2489C316002410BA /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
-		323308102489C316002410BA /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		323308122489C317002410BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		323308152489C317002410BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		323308172489C317002410BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		323308272489E1C7002410BA /* SimpleAnimations-Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SimpleAnimations-Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3233082A2489E1C7002410BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		3233082C2489E1C9002410BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3233082E2489E1C9002410BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		323308332489E1CA002410BA /* SimpleAnimations-Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SimpleAnimations-Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3233083A2489E1CA002410BA /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		3233083C2489E1CA002410BA /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		3233083E2489E1CB002410BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		323308412489E1CB002410BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		323308432489E1CB002410BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C78565D22BEAE9000FFC87F /* SimpleAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C78566022BEAE9000FFC87F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C78566222BEAE9000FFC87F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,7 +88,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		323308042489C316002410BA /* Frameworks */ = {
+		323308302489E1CA002410BA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -106,32 +105,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		323307FC2489C313002410BA /* SimpleAnimations-Watch WatchKit App */ = {
+		323308282489E1C7002410BA /* SimpleAnimations-Watch */ = {
 			isa = PBXGroup;
 			children = (
-				323307FD2489C313002410BA /* Interface.storyboard */,
-				323308002489C316002410BA /* Assets.xcassets */,
-				323308022489C316002410BA /* Info.plist */,
+				323308292489E1C7002410BA /* Interface.storyboard */,
+				3233082C2489E1C9002410BA /* Assets.xcassets */,
+				3233082E2489E1C9002410BA /* Info.plist */,
 			);
-			path = "SimpleAnimations-Watch WatchKit App";
+			path = "SimpleAnimations-Watch";
 			sourceTree = "<group>";
 		};
-		3233080B2489C316002410BA /* SimpleAnimations-Watch WatchKit Extension */ = {
+		323308372489E1CA002410BA /* SimpleAnimations-Watch Extension */ = {
 			isa = PBXGroup;
 			children = (
-				3233080E2489C316002410BA /* HostingController.swift */,
-				323308102489C316002410BA /* ExtensionDelegate.swift */,
-				323308122489C317002410BA /* Assets.xcassets */,
-				323308172489C317002410BA /* Info.plist */,
-				323308142489C317002410BA /* Preview Content */,
+				3233083A2489E1CA002410BA /* HostingController.swift */,
+				3233083C2489E1CA002410BA /* ExtensionDelegate.swift */,
+				3233083E2489E1CB002410BA /* Assets.xcassets */,
+				323308432489E1CB002410BA /* Info.plist */,
+				323308402489E1CB002410BA /* Preview Content */,
 			);
-			path = "SimpleAnimations-Watch WatchKit Extension";
+			path = "SimpleAnimations-Watch Extension";
 			sourceTree = "<group>";
 		};
-		323308142489C317002410BA /* Preview Content */ = {
+		323308402489E1CB002410BA /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				323308152489C317002410BA /* Preview Assets.xcassets */,
+				323308412489E1CB002410BA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -140,8 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				9C78565F22BEAE9000FFC87F /* SimpleAnimations */,
-				323307FC2489C313002410BA /* SimpleAnimations-Watch WatchKit App */,
-				3233080B2489C316002410BA /* SimpleAnimations-Watch WatchKit Extension */,
+				323308282489E1C7002410BA /* SimpleAnimations-Watch */,
+				323308372489E1CA002410BA /* SimpleAnimations-Watch Extension */,
 				9C78565E22BEAE9000FFC87F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -150,9 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				9C78565D22BEAE9000FFC87F /* SimpleAnimations.app */,
-				323307F52489C313002410BA /* SimpleAnimations-Watch.app */,
-				323307F82489C313002410BA /* SimpleAnimations-Watch WatchKit App.app */,
-				323308072489C316002410BA /* SimpleAnimations-Watch WatchKit Extension.appex */,
+				323308272489E1C7002410BA /* SimpleAnimations-Watch.app */,
+				323308332489E1CA002410BA /* SimpleAnimations-Watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -182,55 +180,38 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		323307F42489C313002410BA /* SimpleAnimations-Watch */ = {
+		323308262489E1C7002410BA /* SimpleAnimations-Watch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 323308222489C317002410BA /* Build configuration list for PBXNativeTarget "SimpleAnimations-Watch" */;
+			buildConfigurationList = 3233084B2489E1CB002410BA /* Build configuration list for PBXNativeTarget "SimpleAnimations-Watch" */;
 			buildPhases = (
-				323307F32489C313002410BA /* Resources */,
-				3233081A2489C317002410BA /* Embed Watch Content */,
+				323308252489E1C7002410BA /* Resources */,
+				3233084A2489E1CB002410BA /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				323307FB2489C313002410BA /* PBXTargetDependency */,
+				323308362489E1CA002410BA /* PBXTargetDependency */,
 			);
 			name = "SimpleAnimations-Watch";
 			productName = "SimpleAnimations-Watch";
-			productReference = 323307F52489C313002410BA /* SimpleAnimations-Watch.app */;
-			productType = "com.apple.product-type.application.watchapp2-container";
-		};
-		323307F72489C313002410BA /* SimpleAnimations-Watch WatchKit App */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 323308212489C317002410BA /* Build configuration list for PBXNativeTarget "SimpleAnimations-Watch WatchKit App" */;
-			buildPhases = (
-				323307F62489C313002410BA /* Resources */,
-				3233081D2489C317002410BA /* Embed App Extensions */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3233080A2489C316002410BA /* PBXTargetDependency */,
-			);
-			name = "SimpleAnimations-Watch WatchKit App";
-			productName = "SimpleAnimations-Watch WatchKit App";
-			productReference = 323307F82489C313002410BA /* SimpleAnimations-Watch WatchKit App.app */;
+			productReference = 323308272489E1C7002410BA /* SimpleAnimations-Watch.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
-		323308062489C316002410BA /* SimpleAnimations-Watch WatchKit Extension */ = {
+		323308322489E1CA002410BA /* SimpleAnimations-Watch Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 323308202489C317002410BA /* Build configuration list for PBXNativeTarget "SimpleAnimations-Watch WatchKit Extension" */;
+			buildConfigurationList = 323308472489E1CB002410BA /* Build configuration list for PBXNativeTarget "SimpleAnimations-Watch Extension" */;
 			buildPhases = (
-				323308032489C316002410BA /* Sources */,
-				323308042489C316002410BA /* Frameworks */,
-				323308052489C316002410BA /* Resources */,
+				3233082F2489E1CA002410BA /* Sources */,
+				323308302489E1CA002410BA /* Frameworks */,
+				323308312489E1CA002410BA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "SimpleAnimations-Watch WatchKit Extension";
-			productName = "SimpleAnimations-Watch WatchKit Extension";
-			productReference = 323308072489C316002410BA /* SimpleAnimations-Watch WatchKit Extension.appex */;
+			name = "SimpleAnimations-Watch Extension";
+			productName = "SimpleAnimations-Watch Extension";
+			productReference = 323308332489E1CA002410BA /* SimpleAnimations-Watch Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
 		9C78565C22BEAE9000FFC87F /* SimpleAnimations */ = {
@@ -240,10 +221,12 @@
 				9C78565922BEAE9000FFC87F /* Sources */,
 				9C78565A22BEAE9000FFC87F /* Frameworks */,
 				9C78565B22BEAE9000FFC87F /* Resources */,
+				3233084E2489E1CB002410BA /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				323308452489E1CB002410BA /* PBXTargetDependency */,
 			);
 			name = SimpleAnimations;
 			productName = SimpleAnimations;
@@ -260,13 +243,10 @@
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = MyCompany;
 				TargetAttributes = {
-					323307F42489C313002410BA = {
+					323308262489E1C7002410BA = {
 						CreatedOnToolsVersion = 11.5;
 					};
-					323307F72489C313002410BA = {
-						CreatedOnToolsVersion = 11.5;
-					};
-					323308062489C316002410BA = {
+					323308322489E1CA002410BA = {
 						CreatedOnToolsVersion = 11.5;
 					};
 					9C78565C22BEAE9000FFC87F = {
@@ -288,36 +268,28 @@
 			projectRoot = "";
 			targets = (
 				9C78565C22BEAE9000FFC87F /* SimpleAnimations */,
-				323307F42489C313002410BA /* SimpleAnimations-Watch */,
-				323307F72489C313002410BA /* SimpleAnimations-Watch WatchKit App */,
-				323308062489C316002410BA /* SimpleAnimations-Watch WatchKit Extension */,
+				323308262489E1C7002410BA /* SimpleAnimations-Watch */,
+				323308322489E1CA002410BA /* SimpleAnimations-Watch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		323307F32489C313002410BA /* Resources */ = {
+		323308252489E1C7002410BA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3233082D2489E1C9002410BA /* Assets.xcassets in Resources */,
+				3233082B2489E1C7002410BA /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		323307F62489C313002410BA /* Resources */ = {
+		323308312489E1CA002410BA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				323308012489C316002410BA /* Assets.xcassets in Resources */,
-				323307FF2489C313002410BA /* Interface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		323308052489C316002410BA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				323308162489C317002410BA /* Preview Assets.xcassets in Resources */,
-				323308132489C317002410BA /* Assets.xcassets in Resources */,
+				323308422489E1CB002410BA /* Preview Assets.xcassets in Resources */,
+				3233083F2489E1CB002410BA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,13 +306,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		323308032489C316002410BA /* Sources */ = {
+		3233082F2489E1CA002410BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3233080F2489C316002410BA /* HostingController.swift in Sources */,
-				323308112489C316002410BA /* ExtensionDelegate.swift in Sources */,
-				323308242489C3D8002410BA /* ContentView.swift in Sources */,
+				3233083B2489E1CA002410BA /* HostingController.swift in Sources */,
+				3233084F2489E244002410BA /* ContentView.swift in Sources */,
+				3233083D2489E1CA002410BA /* ExtensionDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,23 +329,23 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		323307FB2489C313002410BA /* PBXTargetDependency */ = {
+		323308362489E1CA002410BA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 323307F72489C313002410BA /* SimpleAnimations-Watch WatchKit App */;
-			targetProxy = 323307FA2489C313002410BA /* PBXContainerItemProxy */;
+			target = 323308322489E1CA002410BA /* SimpleAnimations-Watch Extension */;
+			targetProxy = 323308352489E1CA002410BA /* PBXContainerItemProxy */;
 		};
-		3233080A2489C316002410BA /* PBXTargetDependency */ = {
+		323308452489E1CB002410BA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 323308062489C316002410BA /* SimpleAnimations-Watch WatchKit Extension */;
-			targetProxy = 323308092489C316002410BA /* PBXContainerItemProxy */;
+			target = 323308262489E1C7002410BA /* SimpleAnimations-Watch */;
+			targetProxy = 323308442489E1CB002410BA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		323307FD2489C313002410BA /* Interface.storyboard */ = {
+		323308292489E1C7002410BA /* Interface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				323307FE2489C313002410BA /* Base */,
+				3233082A2489E1C7002410BA /* Base */,
 			);
 			name = Interface.storyboard;
 			sourceTree = "<group>";
@@ -389,89 +361,22 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		323308182489C317002410BA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "SudarshanSharma.SimpleAnimations-Watch";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		323308192489C317002410BA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "SudarshanSharma.SimpleAnimations-Watch";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		3233081B2489C317002410BA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
-				IBSC_MODULE = SimpleAnimations_Watch_WatchKit_Extension;
-				INFOPLIST_FILE = "SimpleAnimations-Watch WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "SudarshanSharma.SimpleAnimations-Watch.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.2;
-			};
-			name = Debug;
-		};
-		3233081C2489C317002410BA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
-				IBSC_MODULE = SimpleAnimations_Watch_WatchKit_Extension;
-				INFOPLIST_FILE = "SimpleAnimations-Watch WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "SudarshanSharma.SimpleAnimations-Watch.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.2;
-			};
-			name = Release;
-		};
-		3233081E2489C317002410BA /* Debug */ = {
+		323308482489E1CB002410BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_ASSET_PATHS = "\"SimpleAnimations-Watch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SimpleAnimations-Watch Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "SimpleAnimations-Watch WatchKit Extension/Info.plist";
+				INFOPLIST_FILE = "SimpleAnimations-Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "SudarshanSharma.SimpleAnimations-Watch.watchkitapp.watchkitextension";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SimpleAnimations.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
@@ -482,22 +387,63 @@
 			};
 			name = Debug;
 		};
-		3233081F2489C317002410BA /* Release */ = {
+		323308492489E1CB002410BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_ASSET_PATHS = "\"SimpleAnimations-Watch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SimpleAnimations-Watch Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "SimpleAnimations-Watch WatchKit Extension/Info.plist";
+				INFOPLIST_FILE = "SimpleAnimations-Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "SudarshanSharma.SimpleAnimations-Watch.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SimpleAnimations.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		3233084C2489E1CB002410BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				IBSC_MODULE = SimpleAnimations_Watch_Extension;
+				INFOPLIST_FILE = "SimpleAnimations-Watch/Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SimpleAnimations.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		3233084D2489E1CB002410BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				IBSC_MODULE = SimpleAnimations_Watch_Extension;
+				INFOPLIST_FILE = "SimpleAnimations-Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SimpleAnimations.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -666,29 +612,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		323308202489C317002410BA /* Build configuration list for PBXNativeTarget "SimpleAnimations-Watch WatchKit Extension" */ = {
+		323308472489E1CB002410BA /* Build configuration list for PBXNativeTarget "SimpleAnimations-Watch Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3233081E2489C317002410BA /* Debug */,
-				3233081F2489C317002410BA /* Release */,
+				323308482489E1CB002410BA /* Debug */,
+				323308492489E1CB002410BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		323308212489C317002410BA /* Build configuration list for PBXNativeTarget "SimpleAnimations-Watch WatchKit App" */ = {
+		3233084B2489E1CB002410BA /* Build configuration list for PBXNativeTarget "SimpleAnimations-Watch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3233081B2489C317002410BA /* Debug */,
-				3233081C2489C317002410BA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		323308222489C317002410BA /* Build configuration list for PBXNativeTarget "SimpleAnimations-Watch" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				323308182489C317002410BA /* Debug */,
-				323308192489C317002410BA /* Release */,
+				3233084C2489E1CB002410BA /* Debug */,
+				3233084D2489E1CB002410BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
